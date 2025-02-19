@@ -32,5 +32,6 @@
 *.app
 
 ## nov05
-./CMakeLists.txt
+/CMakeLists.txt  
+!**/CMakeLists.txt
 simple_arm/
