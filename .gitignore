@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+## nov05
+./CMakeLists.txt
+simple_arm/
