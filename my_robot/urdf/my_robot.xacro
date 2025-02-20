@@ -9,13 +9,13 @@
         <material>Gazebo/WoodFloor</material>
     </gazebo>
     <gazebo reference="left_wheel">
-        <material>Gazebo/GreyTransparent</material>
+        <material>Gazebo/PaintedWall</material>
     </gazebo>
     <gazebo reference="right_wheel">
-        <material>Gazebo/GreyTransparent</material>
+        <material>Gazebo/PaintedWall</material>
     </gazebo>
     <gazebo reference="camera">
-        <material>Gazebo/LightBlueLaser</material>
+        <material>Gazebo/Green</material>
     </gazebo>
 
     <link name='chassis'>
