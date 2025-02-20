@@ -6,13 +6,13 @@
 
     <!-- Model materials -->
     <gazebo reference="chassis">
-        <material>Gazebo/WoodFloor</material>
+        <material>Gazebo/Wood</material>
     </gazebo>
     <gazebo reference="left_wheel">
-        <material>Gazebo/PaintedWall</material>
+        <material>Gazebo/PioneerBody</material>
     </gazebo>
     <gazebo reference="right_wheel">
-        <material>Gazebo/PaintedWall</material>
+        <material>Gazebo/PioneerBody</material>
     </gazebo>
     <gazebo reference="camera">
         <material>Gazebo/Green</material>
