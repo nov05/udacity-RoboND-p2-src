@@ -4,7 +4,6 @@
 
     <!-- World File -->
     <arg name="world_file" default="$(find my_robot)/worlds/udacity_office.world" />
-
     <!-- Launch Gazebo World -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="use_sim_time" value="true" />
@@ -13,7 +12,7 @@
         <arg name="world_name" value="$(arg world_file)" />
     </include>
 
-    <!-- Robot pose -->
+    <!-- Robot Pose -->
     <arg name="x" default="-3" />
     <arg name="y" default="-6.5" />
     <arg name="z" default="0" />
@@ -22,12 +21,9 @@
     <arg name="yaw" default="-1.5707" />
     <!-- Launch other relevant files-->
     <include file="$(find my_robot)/launch/robot_description.launch" />
-    <!-- Robot pose -->
-
     <!-- Find my robot Description-->
     <param name="robot_description"
         command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'" />
-
     <!-- Spawn My Robot -->
     <!-- Give a unique model name or it might cause error:
     "SpawnModel: Failure - model name my_robot already exist."-->
