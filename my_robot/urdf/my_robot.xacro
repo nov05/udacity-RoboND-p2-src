@@ -1,8 +1,7 @@
 <?xml version='1.0'?>
 
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <!--Import
-  gazebo elements-->
+  <!--Import gazebo elements-->
   <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
 
   <link name="robot_footprint" />
