@@ -14,8 +14,8 @@
     </include>
 
     <!-- Robot pose -->
-    <arg name="x" default="-1" />
-    <arg name="y" default="-3.5" />
+    <arg name="x" default="-2.5" />
+    <arg name="y" default="-6" />
     <arg name="z" default="0" />
     <arg name="roll" default="0" />
     <arg name="pitch" default="0" />
