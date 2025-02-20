@@ -59,6 +59,10 @@
         </visual>
     </link>
 
+    <gazebo reference="chassis">
+        <material>Gazebo/Wood</material>
+    </gazebo>
+
     <joint name="robot_footprint_joint" type="fixed">
         <origin xyz="0 0 0" rpy="0 0 0" />
         <parent link="robot_footprint" />
@@ -89,6 +93,10 @@
             </geometry>
         </collision>
     </link>
+
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Gold</material>
+    </gazebo>
 
     <joint type="continuous" name="left_wheel_hinge">
         <origin xyz="0 0.15 0" rpy="0 0 0" />
