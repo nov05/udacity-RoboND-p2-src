@@ -3,7 +3,7 @@
 <launch>
 
     <!-- World File -->
-    <arg name="world_file" default="$(find my_robot)/worlds/UdacityOffice.world" />
+    <arg name="world_file" default="$(find my_robot)/worlds/udacity_office.world" />
 
     <!-- Launch Gazebo World -->
     <include file="$(find gazebo_ros)/launch/udacity_office.launch">
