@@ -15,8 +15,7 @@
         <material>Gazebo/DarkGrey</material>
     </gazebo>
     <gazebo reference="camera">
-        <material>Gazebo/DarkGrey</material>
-        <material>Gazebo/GreenTransparentOverlay</material>
+        <material>Gazebo/TurquoiseGlowOutline</material>
     </gazebo>
 
     <link name='chassis'>
