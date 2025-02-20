@@ -6,7 +6,7 @@
 
     <!-- Model materials -->
     <gazebo reference="chassis">
-        <material>Gazebo/WoodPallet</material>
+        <material>Gazebo/WoodFloor</material>
     </gazebo>
     <gazebo reference="left_wheel">
         <material>Gazebo/GreyTransparent</material>
@@ -14,8 +14,8 @@
     <gazebo reference="right_wheel">
         <material>Gazebo/GreyTransparent</material>
     </gazebo>
-    <gazebo reference="hokuyo">
-        <material>Gazebo/GreenGlow</material>
+    <gazebo reference="camera">
+        <material>Gazebo/LightBlueLaser</material>
     </gazebo>
 
     <link name='chassis'>
