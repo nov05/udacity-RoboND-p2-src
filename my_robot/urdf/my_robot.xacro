@@ -9,10 +9,10 @@
         <material>Gazebo/Wood</material>
     </gazebo>
     <gazebo reference="left_wheel">
-        <material>Gazebo/BlackTransparent</material>
+        <material>Gazebo/DarkGrey</material>
     </gazebo>
     <gazebo reference="right_wheel">
-        <material>Gazebo/BlackTransparent</material>
+        <material>Gazebo/DarkGrey</material>
     </gazebo>
     <gazebo reference="camera">
         <material>Gazebo/GreenTransparentOverlay</material>
