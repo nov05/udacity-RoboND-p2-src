@@ -9,10 +9,10 @@
         <material>Gazebo/Wood</material>
     </gazebo>
     <gazebo reference="left_wheel">
-        <material>Gazebo/PioneerBody</material>
+        <material>Gazebo/CloudySky</material>
     </gazebo>
     <gazebo reference="right_wheel">
-        <material>Gazebo/PioneerBody</material>
+        <material>Gazebo/CloudySky</material>
     </gazebo>
     <gazebo reference="camera">
         <material>Gazebo/Green</material>
