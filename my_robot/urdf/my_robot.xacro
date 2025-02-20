@@ -4,6 +4,20 @@
 
     <link name="robot_footprint"></link>
 
+    <!-- Model materials -->
+    <gazebo reference="chassis">
+        <material>Gazebo/WoodPallet</material>
+    </gazebo>
+    <gazebo reference="left_wheel">
+        <material>Gazebo/GreyTransparent</material>
+    </gazebo>
+    <gazebo reference="right_wheel">
+        <material>Gazebo/GreyTransparent</material>
+    </gazebo>
+    <gazebo reference="hokuyo">
+        <material>Gazebo/GreenGlow</material>
+    </gazebo>
+
     <link name='chassis'>
         <pose>0 0 0.1 0 0 0</pose>
 
@@ -59,10 +73,6 @@
         </visual>
     </link>
 
-    <gazebo reference="chassis">
-        <material>Gazebo/Wood</material>
-    </gazebo>
-
     <joint name="robot_footprint_joint" type="fixed">
         <origin xyz="0 0 0" rpy="0 0 0" />
         <parent link="robot_footprint" />
@@ -93,10 +103,6 @@
             </geometry>
         </collision>
     </link>
-
-    <gazebo reference="left_wheel">
-        <material>Gazebo/Gold</material>
-    </gazebo>
 
     <joint type="continuous" name="left_wheel_hinge">
         <origin xyz="0 0.15 0" rpy="0 0 0" />
