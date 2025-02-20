@@ -127,21 +127,21 @@
 
   <!-- Camera link -->
   <link name="camera">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0.2 0 0" rpy="0 0 0" />
     <inertial>
       <mass value="0.1" />
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.2 0 0" rpy="0 0 0" />
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.2 0 0" rpy="0 0 0" />
       <geometry>
         <box size="0.05 0.05 0.05" />
       </geometry>
       <material name="grey" />
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.2 0 0" rpy="0 0 0" />
       <geometry>
         <box size="0.05 0.05 0.05" />
       </geometry>
@@ -158,20 +158,20 @@
 
   <!-- Hokuyo LiDAR link -->
   <link name="hokuyo">
-    <origin xyz="0 0 0.1" rpy="0 0 0" />
+    <origin xyz="0.15 0 0.09" rpy="0 0 0" />
     <inertial>
       <mass value="1e-5" />
       <origin xyz="0 0 0.05" rpy="0 0 0" />
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0.05" rpy="0 0 0" />
+      <origin xyz="0.15 0 0.09" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://my_robot/meshes/hokuyo.dae" />
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0.05" rpy="0 0 0" />
+      <origin xyz="0.15 0 0.09" rpy="0 0 0" />
       <geometry>
         <box size="0.1 0.1 0.1" />
       </geometry>
@@ -182,7 +182,7 @@
   <joint name="hokuyo_joint" type="fixed">
     <parent link="chassis" />
     <child link="hokuyo" />
-    <origin xyz="0 0 0.05" rpy="0 0 0" />
+    <origin xyz="0.15 0 0.09" rpy="0 0 0" />
     <axis xyz="0 1 0" />
   </joint>
 
