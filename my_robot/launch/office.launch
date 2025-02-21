@@ -10,7 +10,5 @@
         <arg name="world_name" value="$(arg world_file)" />
     </include>
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-        args="-urdf -model udacity_office_my_robot 
-            -x $(arg x) -y $(arg y) -z $(arg z)
-            -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
+        args="-urdf -model udacity_office_my_robot" />
 </launch>
