@@ -1,3 +1,11 @@
+## Added by nov05, base on github C++ .gitignore
+build/
+/CMakeLists.txt  
+!**/CMakeLists.txt
+## This will be managed by another GitHub repo
+simple_arm/   
+
+
 # Prerequisites
 *.d
 
@@ -30,8 +38,3 @@
 *.exe
 *.out
 *.app
-
-## nov05
-/CMakeLists.txt  
-!**/CMakeLists.txt
-simple_arm/
