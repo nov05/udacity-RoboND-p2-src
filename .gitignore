@@ -3,7 +3,6 @@ build/
 ## This will be managed by another GitHub repo
 simple_arm/   
 
-
 # Prerequisites
 *.d
 
