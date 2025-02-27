@@ -4,7 +4,6 @@
     <arg name="world_file" default="$(find my_robot)/worlds/udacity_office.world" />
     <!-- Launch Gazebo World -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <param name="gazebo/timeout" value="300" />
         <arg name="use_sim_time" value="true" />
         <arg name="debug" value="true" />
         <arg name="gui" value="true" />
@@ -32,5 +31,5 @@
             -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
 
     <!--launch rviz-->
-    <node name="rviz" pkg="rviz" type="rviz" respawn="false" />
+    <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" /> -->
 </launch>
