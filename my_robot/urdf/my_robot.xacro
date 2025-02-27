@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
 
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <!--Import gazebo elements-->
   <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
 
+  <!-- Import gazebo elements -->
   <link name="robot_footprint" />
 
   <link name='chassis'>
@@ -60,29 +60,30 @@
     <child link="chassis" />
   </joint>
 
+  <!-- Left Wheel -->
   <link name='left_wheel'>
     <inertial>
       <mass value="5.0" />
       <origin xyz="0.0 0 0" rpy="0 0 0" />
       <inertia
         ixx="0.1" ixy="0" ixz="0"
-        iyy="0.1" iyz="0"
-        izz="0.1" />
+        iyy="0.1" iyz="0" izz="0.1" />
     </inertial>
     <visual name='left_wheel_visual'>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707" />
       <geometry>
-        <cylinder radius="0.1" length="0.05" />
+        <cylinder radius="0.101" length="0.05" />
       </geometry>
     </visual>
     <collision name='left_wheel_collision'>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707" />
       <geometry>
-        <cylinder radius="0.099" length="0.0499" />
+        <cylinder radius="0.101" length="0.05" />
       </geometry>
     </collision>
   </link>
 
+  <!-- Left Wheel Hinge -->
   <joint type="continuous" name="left_wheel_hinge">
     <origin xyz="0 0.15 0" rpy="0 0 0" />
     <child link="left_wheel" />
@@ -104,13 +105,13 @@
     <visual name='right_wheel_visual'>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707" />
       <geometry>
-        <cylinder radius="0.1" length="0.05" />
+        <cylinder radius="0.101" length="0.05" />
       </geometry>
     </visual>
     <collision name='right_wheel_collision'>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707" />
       <geometry>
-        <cylinder radius="0.099" length="0.0499" />
+        <cylinder radius="0.101" length="0.05" />
       </geometry>
     </collision>
   </link>
@@ -128,7 +129,7 @@
   <link name="camera">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <inertial>
-      <mass value="0.1" />
+      <mass value="1e-5" />
       <origin xyz="0 0 0" rpy="0 0 0" />
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
