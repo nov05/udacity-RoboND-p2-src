@@ -137,7 +137,8 @@
       <geometry>
         <box size="0.05 0.05 0.05" />
       </geometry>
-      <material name="grey" />
+      <!-- <material name="grey" /> -->
+      <material name="Gazebo/Grey" />
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
