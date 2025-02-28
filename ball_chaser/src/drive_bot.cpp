@@ -10,7 +10,7 @@ ros::Publisher motor_command_publisher;
 // This function should publish the requested linear x and angular velocities to the robot wheel joints
 // After publishing the requested velocities, a message feedback should be returned with the requested wheel velocities
 void handle_drive_request(ball_chaser::DriveToTarget &req,
-                          ball_chaser::DrvieToTarget &res)
+                          ball_chaser::DriveToTarget &res)
 {
     // ball_chaser::DriveToTarget srv;
     // srv.request.linear_x = 1.57;
