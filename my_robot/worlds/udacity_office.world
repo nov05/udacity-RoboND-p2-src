@@ -6016,26 +6016,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='table'>
-        <pose>-18.0892 2.54853 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-18.0892 2.54853 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='table_0'>
-        <pose>-17.9972 -2.88407 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-17.9972 -2.88407 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
@@ -6047,6 +6028,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    
     <model name='HumanoidRobot_0'>
       <static>0</static>
       <link name='body'>
