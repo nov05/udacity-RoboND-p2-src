@@ -26,7 +26,7 @@
     <!-- Give a unique model name or it might cause error:
     "SpawnModel: Failure - model name my_robot already exist."-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-        args="-urdf -param robot_description -model udacity_office_my_robot 
+        args="-urdf -param robot_description -model my_robot_in_udacity_office 
             -x $(arg x) -y $(arg y) -z $(arg z)
             -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
 

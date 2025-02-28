@@ -25,10 +25,9 @@
     <param name="robot_description"
         command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'" />
     <!-- Spawn My Robot-->
-    <!-- Give a unique model name or it might cause error:
-    "SpawnModel: Failure - model name my_robot already exist."-->
+    <!-- Give a unique model name or it might cause error: "SpawnModel: Failure - model name my_robot already exist."-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-        args="-urdf -param robot_description -model empty_world_my_robot
+        args="-urdf -param robot_description -model my_robot_in_empty_world
             -x $(arg x) -y $(arg y) -z $(arg z)
             -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
 
