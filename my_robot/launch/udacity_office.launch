@@ -19,9 +19,6 @@
     <arg name="yaw" default="1.5707" />
     <!-- Launch other relevant files-->
     <include file="$(find my_robot)/launch/robot_description.launch" />
-    <!-- Find my robot Description-->
-    <param name="robot_description"
-        command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'" />
     <!-- Spawn My Robot -->
     <!-- Give a unique model name or it might cause error:
     "SpawnModel: Failure - model name my_robot already exist."-->
