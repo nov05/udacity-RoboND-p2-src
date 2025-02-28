@@ -4927,7 +4927,7 @@
     <model name='table'>
       <static>1</static>
       <link name='link'>
-        <collision name='surface'>
+        <collision name='table_surface'>
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
@@ -4951,7 +4951,7 @@
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
-        <visual name='visual1'>
+        <visual name='table_visual1'>
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
