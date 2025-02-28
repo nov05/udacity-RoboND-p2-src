@@ -31,7 +31,7 @@ bool handle_drive_request(ball_chaser::DriveToTarget::Request &req,
     res.msg_feedback = node_name + ": DriveToTarget - linear_x: " + std::to_string(joints_angles[0]) + ", j2: " + std::to_string(joints_angles[1]);
     ROS_INFO_STREAM(res.msg_feedback);
 
-    return true
+    return true;
 }
 
 int main(int argc, char **argv)
