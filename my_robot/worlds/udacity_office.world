@@ -5881,10 +5881,10 @@
       <pose>15.4087 6.99256 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>50 321000000</sim_time>
-      <real_time>50 566426278</real_time>
-      <wall_time>1740689989 298163877</wall_time>
-      <iterations>50321</iterations>
+      <sim_time>228 646000000</sim_time>
+      <real_time>112 633794865</real_time>
+      <wall_time>1740777100 4996587</wall_time>
+      <iterations>112274</iterations>
       <model name='Building'>
         <pose>-2.48514 -0.2432 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -6034,89 +6034,89 @@
         </link>
       </model>
       <model name='Construction Cone'>
-        <pose>-15.6096 -5.50591 -0 0 -0 0</pose>
+        <pose>-15.6096 -5.50591 -3e-06 -3e-06 -1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-15.6096 -5.50591 -0 0 -0 0</pose>
+          <pose>-15.6096 -5.50591 -3e-06 -3e-06 -1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0.008512 -2.58585 1.13682 3.14159</acceleration>
-          <wrench>0 -0 -0.008512 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_0'>
-        <pose>15.9389 7.06732 -0 0 -0 0.001025</pose>
+        <pose>15.9389 7.06732 -4e-06 -2e-06 0 0.001025</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>15.9389 7.06732 -0 0 -0 0.001025</pose>
+          <pose>15.9389 7.06732 -4e-06 -2e-06 0 0.001025</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0.008512 -2.58791 1.13625 3.14159</acceleration>
-          <wrench>0 -0 -0.008512 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1'>
-        <pose>15.4087 6.99256 -4e-06 3e-06 -0 0</pose>
+        <pose>15.4087 6.99256 -3e-06 -3e-06 -1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>15.4087 6.99256 -4e-06 3e-06 -0 0</pose>
+          <pose>15.4087 6.99256 -3e-06 -3e-06 -1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='HumanoidRobot'>
-        <pose>-7.2031 -8.11814 0.15 -1e-06 1e-06 0.000838</pose>
+        <pose>-9.84369 -5.8276 0.15 -1e-06 -1e-06 -2.2e-05</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>-7.2031 -8.11814 0.65 -1e-06 1e-06 0.000838</pose>
-          <velocity>0.000411 -0.000231 9e-06 0.000363 0.000637 7e-06</velocity>
-          <acceleration>0.821659 -0.464131 0.018439 0.725852 1.27395 0.010419</acceleration>
-          <wrench>0.821659 -0.464131 0.018439 0 -0 0</wrench>
+          <pose>-9.84369 -5.8276 0.65 -1e-06 -1e-06 -2.2e-05</pose>
+          <velocity>2e-06 0.000474 -6e-06 -0.000733 2e-06 9e-06</velocity>
+          <acceleration>0.004545 0.947474 -0.012957 -1.46638 0.00319 0.019419</acceleration>
+          <wrench>0.004545 0.947474 -0.012957 0 -0 0</wrench>
         </link>
         <link name='front_ball'>
-          <pose>-6.9031 -8.11789 0.15 -1e-06 1e-06 0.000838</pose>
-          <velocity>9.4e-05 -5.2e-05 -0.000206 0.000364 0.000634 6e-06</velocity>
-          <acceleration>0.189543 -0.106584 -0.412871 0.727318 1.26868 0.008499</acceleration>
-          <wrench>0.189543 -0.106584 -0.412871 0 -0 0</wrench>
+          <pose>-9.54368 -5.82761 0.15 -1e-06 -1e-06 -2.2e-05</pose>
+          <velocity>0 0.00011 4e-06 -0.000734 3e-06 9e-06</velocity>
+          <acceleration>0.000835 0.220078 0.00859 -1.46729 0.005366 0.020838</acceleration>
+          <wrench>0.000835 0.220078 0.00859 0 -0 0</wrench>
         </link>
         <link name='left_ball'>
-          <pose>-7.35332 -7.85827 0.15 -1e-06 1e-06 0.000838</pose>
-          <velocity>9.5e-05 -5.5e-05 0.000234 0.000364 0.000634 7e-06</velocity>
-          <acceleration>0.191606 -0.109632 0.467036 0.728015 1.2686 0.009453</acceleration>
-          <wrench>0.191606 -0.109632 0.467036 0 -0 0</wrench>
+          <pose>-9.99368 -5.5676 0.15 -1e-06 -1e-06 -2.2e-05</pose>
+          <velocity>0 0.000111 -0.00022 -0.000733 2e-06 9e-06</velocity>
+          <acceleration>0.000605 0.220604 -0.440705 -1.46632 0.004461 0.020164</acceleration>
+          <wrench>0.000605 0.220604 -0.440705 0 -0 0</wrench>
         </link>
         <link name='right_ball'>
-          <pose>-7.35288 -8.37827 0.15 -1e-06 1e-06 0.000838</pose>
-          <velocity>9.5e-05 -5.4e-05 -5e-06 0.00036 0.000634 7e-06</velocity>
-          <acceleration>0.19025 -0.108034 -0.009878 0.720743 1.2687 0.010314</acceleration>
-          <wrench>0.19025 -0.108034 -0.009878 0 -0 0</wrench>
+          <pose>-9.99369 -6.0876 0.15 -1e-06 -1e-06 -2.2e-05</pose>
+          <velocity>1e-06 0.00011 0.0002 -0.000731 3e-06 9e-06</velocity>
+          <acceleration>0.002088 0.218127 0.399623 -1.46151 0.00602 0.019945</acceleration>
+          <wrench>0.002088 0.218127 0.399623 0 -0 0</wrench>
         </link>
       </model>
       <model name='HumanoidRobot_0'>
-        <pose>12.2641 3.62688 0.15 -1e-06 -0 0.000763</pose>
+        <pose>12.264 3.62698 0.15 -1e-06 1e-06 0.001107</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>12.2641 3.62688 0.65 -1e-06 -0 0.000763</pose>
-          <velocity>-0.000411 0.000233 -9e-06 -0.000363 -0.000637 -3e-06</velocity>
-          <acceleration>-0.821624 0.464193 -0.018439 -0.725948 -1.27389 -0.010419</acceleration>
-          <wrench>-0.821624 0.464193 -0.018439 0 -0 0</wrench>
+          <pose>12.264 3.62698 0.65 -1e-06 1e-06 0.001107</pose>
+          <velocity>0.000411 -0.000231 9e-06 0.000363 0.000637 7e-06</velocity>
+          <acceleration>0.821784 -0.46391 0.018439 0.725509 1.27414 0.010419</acceleration>
+          <wrench>0.821784 -0.46391 0.018439 0 -0 0</wrench>
         </link>
         <link name='front_ball'>
-          <pose>12.5641 3.6271 0.15 -1e-06 -0 0.000763</pose>
-          <velocity>-9.5e-05 5.4e-05 0.000206 -0.000364 -0.000634 -2e-06</velocity>
-          <acceleration>-0.189535 0.106598 0.412871 -0.727413 -1.26862 -0.008499</acceleration>
-          <wrench>-0.189535 0.106598 0.412871 0 -0 0</wrench>
+          <pose>12.564 3.62731 0.15 -1e-06 1e-06 0.001107</pose>
+          <velocity>9.4e-05 -5.2e-05 -0.000206 0.000363 0.000634 6e-06</velocity>
+          <acceleration>0.189571 -0.106533 -0.412871 0.726977 1.26887 0.008499</acceleration>
+          <wrench>0.189571 -0.106533 -0.412871 0 -0 0</wrench>
         </link>
         <link name='left_ball'>
-          <pose>12.1139 3.88676 0.15 -1e-06 -0 0.000763</pose>
-          <velocity>-9.7e-05 5.5e-05 -0.000234 -0.000364 -0.000634 -3e-06</velocity>
-          <acceleration>-0.191597 0.109646 -0.467036 -0.728111 -1.26854 -0.009453</acceleration>
-          <wrench>-0.191597 0.109646 -0.467036 0 -0 0</wrench>
+          <pose>12.1138 3.88681 0.15 -1e-06 1e-06 0.001107</pose>
+          <velocity>9.5e-05 -5.4e-05 0.000234 0.000364 0.000634 7e-06</velocity>
+          <acceleration>0.191635 -0.10958 0.467036 0.727674 1.26879 0.009453</acceleration>
+          <wrench>0.191635 -0.10958 0.467036 0 -0 0</wrench>
         </link>
         <link name='right_ball'>
-          <pose>12.1143 3.36676 0.15 -1e-06 -0 0.000763</pose>
-          <velocity>-9.5e-05 5.4e-05 5e-06 -0.00036 -0.000634 -3e-06</velocity>
-          <acceleration>-0.190242 0.108049 0.009878 -0.720838 -1.26865 -0.010314</acceleration>
-          <wrench>-0.190242 0.108049 0.009878 0 -0 0</wrench>
+          <pose>12.1143 3.36681 0.15 -1e-06 1e-06 0.001107</pose>
+          <velocity>9.5e-05 -5.4e-05 -5e-06 0.00036 0.000634 7e-06</velocity>
+          <acceleration>0.190279 -0.107983 -0.009878 0.720402 1.26889 0.010315</acceleration>
+          <wrench>0.190279 -0.107983 -0.009878 0 -0 0</wrench>
         </link>
       </model>
       <model name='bookshelf'>
@@ -6436,222 +6436,6 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='HumanoidRobot'>
-      <static>0</static>
-      <link name='body'>
-        <pose>0 0 0.5 0 -0 0</pose>
-        <visual name='body_visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.3</radius>
-              <length>1</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <ambient>0.7 0.7 0.7 1</ambient>
-          </material>
-        </visual>
-        <collision name='body_collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.3</radius>
-              <length>1</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <inertial>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-      </link>
-      <link name='front_ball'>
-        <pose>0.3 0 0 0 -0 0</pose>
-        <visual name='front_ball_visual'>
-          <geometry>
-            <sphere>
-              <radius>0.15</radius>
-            </sphere>
-          </geometry>
-        </visual>
-        <collision name='front_ball_collision'>
-          <geometry>
-            <sphere>
-              <radius>0.15</radius>
-            </sphere>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <inertial>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-      </link>
-      <joint name='front_ball_joint' type='fixed'>
-        <parent>body</parent>
-        <child>front_ball</child>
-        <pose>0.3 0 0 0 -0 0</pose>
-      </joint>
-      <link name='left_ball'>
-        <pose>-0.15 0.26 0 0 -0 0</pose>
-        <visual name='left_ball_visual'>
-          <geometry>
-            <sphere>
-              <radius>0.15</radius>
-            </sphere>
-          </geometry>
-        </visual>
-        <collision name='left_ball_collision'>
-          <geometry>
-            <sphere>
-              <radius>0.15</radius>
-            </sphere>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <inertial>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-      </link>
-      <joint name='left_ball_joint' type='fixed'>
-        <parent>body</parent>
-        <child>left_ball</child>
-        <pose>-0.15 0.26 0 0 -0 0</pose>
-      </joint>
-      <link name='right_ball'>
-        <pose>-0.15 -0.26 0 0 -0 0</pose>
-        <visual name='right_ball_visual'>
-          <geometry>
-            <sphere>
-              <radius>0.15</radius>
-            </sphere>
-          </geometry>
-        </visual>
-        <collision name='right_ball_collision'>
-          <geometry>
-            <sphere>
-              <radius>0.15</radius>
-            </sphere>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <inertial>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-      </link>
-      <joint name='right_ball_joint' type='fixed'>
-        <parent>body</parent>
-        <child>right_ball</child>
-        <pose>-0.15 -0.26 0 0 -0 0</pose>
-      </joint>
-      <joint name='front_left_joint' type='fixed'>
-        <parent>front_ball</parent>
-        <child>left_ball</child>
-      </joint>
-      <joint name='front_right_joint' type='fixed'>
-        <parent>front_ball</parent>
-        <child>right_ball</child>
-      </joint>
-      <joint name='left_right_joint' type='fixed'>
-        <parent>left_ball</parent>
-        <child>right_ball</child>
-      </joint>
-      <pose>2.63017 -9.73844 0 0 -0 0</pose>
-    </model>
     <model name='HumanoidRobot_0'>
       <static>0</static>
       <link name='body'>
@@ -7383,5 +7167,221 @@
       <pose>-8.92746 -2.07168 0 0 -0 3.12664</pose>
     </model>
     <wind/>
+    <model name='HumanoidRobot'>
+      <static>0</static>
+      <link name='body'>
+        <pose>0 0 0.5 0 -0 0</pose>
+        <visual name='body_visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.3</radius>
+              <length>1</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+          </material>
+        </visual>
+        <collision name='body_collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.3</radius>
+              <length>1</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='front_ball'>
+        <pose>0.3 0 0 0 -0 0</pose>
+        <visual name='front_ball_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <collision name='front_ball_collision'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='front_ball_joint' type='fixed'>
+        <parent>body</parent>
+        <child>front_ball</child>
+        <pose>0.3 0 0 0 -0 0</pose>
+      </joint>
+      <link name='left_ball'>
+        <pose>-0.15 0.26 0 0 -0 0</pose>
+        <visual name='left_ball_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <collision name='left_ball_collision'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='left_ball_joint' type='fixed'>
+        <parent>body</parent>
+        <child>left_ball</child>
+        <pose>-0.15 0.26 0 0 -0 0</pose>
+      </joint>
+      <link name='right_ball'>
+        <pose>-0.15 -0.26 0 0 -0 0</pose>
+        <visual name='right_ball_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <collision name='right_ball_collision'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='right_ball_joint' type='fixed'>
+        <parent>body</parent>
+        <child>right_ball</child>
+        <pose>-0.15 -0.26 0 0 -0 0</pose>
+      </joint>
+      <joint name='front_left_joint' type='fixed'>
+        <parent>front_ball</parent>
+        <child>left_ball</child>
+      </joint>
+      <joint name='front_right_joint' type='fixed'>
+        <parent>front_ball</parent>
+        <child>right_ball</child>
+      </joint>
+      <joint name='left_right_joint' type='fixed'>
+        <parent>left_ball</parent>
+        <child>right_ball</child>
+      </joint>
+      <pose>-9.84368 -5.82761 0 0 -0 0</pose>
+    </model>
   </world>
 </sdf>
