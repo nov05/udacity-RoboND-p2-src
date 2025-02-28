@@ -4928,6 +4928,7 @@
       <static>1</static>
       <link name='link'>
         <collision name='surface'>
+        <!-- <model name='table_wtf_0'> -->
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
@@ -5123,6 +5124,7 @@
       <static>1</static>
       <link name='link'>
         <collision name='surface'>
+        <!-- <model name='table_wtf_0'> -->
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
