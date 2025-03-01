@@ -85,7 +85,7 @@ void process_image_callback(const sensor_msgs::Image img)
     else
     {
         float ratio = (total_count - 100) / 59900;
-        speed = 0.5 * (1 - ratio) + 0.1;
+        speed = 0.3 * (1 - ratio) + 0.1;
         angle = 0.1 * ratio + 0.4;
     }
 
