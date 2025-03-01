@@ -37,17 +37,17 @@ void process_image_callback(const sensor_msgs::Image img)
     int center_count = 0;
     int right_count = 0;
     int ball_detected_shreshold = 4000;
-    // Calculate the pixel's x-coordinate (column)
-    int column = (i / 3) % img.width;
 
-    int count = 0;
     for (size_t i = 0; i < img.height * img.step; i += 3)
     {
         int red = img.data[i];
         int green = img.data[i + 1];
         int blue = img.data[i + 2];
 
-        // Next check if you found the white color ball
+        // Calculate the pixel's x-coordinate (column)
+        int column = (i / 3) % img.width;
+
+        // Next check if you found the yellow color pixel
         if (red == 255 && green == 255 && blue == 0)
         {
             if (column < img.width / 3)
