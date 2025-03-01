@@ -42,7 +42,7 @@ void process_image_callback(const sensor_msgs::Image img)
         if (red == 1 && green == 1 && blue == 1)
             count += 1;
     }
-    ROS_INFO("yellow pixels detected: %d", count)
+    ROS_INFO("yellow pixels detected: %d", count);
 
     if (ball_detected == true)
         drive_robot(0.5, 0);
