@@ -6,8 +6,6 @@
 ros::ServiceClient client;
 float last_linear_x = 0;
 float last_angular_z = 0;
-const float speed = 0.5;
-const float angle = 0.3;
 
 // This function calls the command_robot service to drive the robot in the specified direction
 void drive_robot(float linear_x, float angular_z)
@@ -82,8 +80,15 @@ void process_image_callback(const sensor_msgs::Image img)
         linear_x = 0;
         angular_z = 0;
     }
+    else
+    {
+        float ratio = (total_count - 100) / 59900;
+        speed = 1 * (1 - ratio);
+        angle = 0.5 * ratio;
+    }
+
     // If the ball is in the left area, turn left and move forward
-    else if (left_count >= center_count && left_count >= right_count)
+    if (left_count >= center_count && left_count >= right_count)
     {
 
         linear_x = speed;
@@ -100,12 +105,6 @@ void process_image_callback(const sensor_msgs::Image img)
     {
         linear_x = speed;
         angular_z = -angle;
-    }
-    // Or stop
-    else
-    {
-        linear_x = 0;
-        angular_z = 0;
     }
 
     drive_robot(linear_x, angular_z);
