@@ -70,8 +70,8 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
-    const float speed = 1;
-    const float angle = 0.5;
+    const float speed = 0.6;
+    const float angle = 0.6;
     float linear_x = 0;
     float angular_z = angle;
     int total_count = left_count + center_count + right_count;
