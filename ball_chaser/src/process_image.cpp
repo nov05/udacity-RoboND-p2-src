@@ -70,6 +70,7 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
+    const float speed = 1;
     const float angle = 0.5;
     float linear_x = 0;
     float angular_z = angle;
@@ -81,7 +82,7 @@ void process_image_callback(const sensor_msgs::Image img)
     }
     else
     {
-        linear_x = 0.3;
+        linear_x = speed;
     }
 
     // If the ball is in the left area, turn left and move forward
