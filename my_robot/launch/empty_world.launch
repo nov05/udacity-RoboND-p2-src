@@ -14,9 +14,18 @@
 
     <!-- Launch other relevant files-->
     <include file="$(find my_robot)/launch/my_robot.launch" />
-    <include file="$(find ball_chaser)/launch/ball_chaser.launch" />
+    <include file="$(find ball_chaser)/launch/ball_chaser.launch">
+        <!-- My Ball Pose -->
+        <arg name="my_ball_x" default="-1" />
+        <arg name="my_ball_y" default="0" />
+        <arg name="my_ball_z" default="0" />
+        <arg name="my_ball_roll" default="0" />
+        <arg name="my_ball_pitch" default="0" />
+        <arg name="my_ball_yaw" default="0" />
+    </include>
 
-    <!--launch rviz-->
+    <!--launch
+    rviz-->
     <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" /> -->
 
 </launch>
