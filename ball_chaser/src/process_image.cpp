@@ -73,7 +73,7 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
-    float speed = 0.3;
+    float speed = 1;
     float angle = 0.5;
     int total_count = left_count + center_count + right_count;
 
