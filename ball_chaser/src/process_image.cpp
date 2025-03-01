@@ -70,12 +70,16 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
+    // set robot speed and angle
     const float speed = 0.4;
     const float angle = 0.5;
-    float linear_x = 0;
-    float angular_z = angle;
-    int total_count = left_count + center_count + right_count;
 
+    // spin left when idle
+    float linear_x = 0;
+    float angular_z = angle;  
+
+    int total_count = left_count + center_count + right_count;
+    // if too close or too far, don't move
     if (total_count > 40000 || total_count < 100)
     {
         linear_x = 0;
@@ -85,17 +89,17 @@ void process_image_callback(const sensor_msgs::Image img)
         linear_x = speed;
     }
 
-    // If the ball is in the left area, turn left and move forward
+    // If the ball is on the left, turn left and move toward it.
     if (left_count >= center_count && left_count >= right_count)
     {
         angular_z = angle;
     }
-    // If the ball is in the center area, move forward
+    // If the ball is in the center, move forward toward it.
     else if (center_count > left_count && center_count >= right_count)
     {
         angular_z = 0;
     }
-    // If the ball is in the right area, turn right and move forward
+    // If the ball is on the right, turn right and move toward it.
     else if (right_count > center_count && right_count > left_count)
     {
         angular_z = -angle;
