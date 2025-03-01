@@ -7091,11 +7091,11 @@
       <static>1</static>
       <link name='link'>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://number1/meshes/number.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
           <material>
             <script>
               <uri>model://number2/materials/scripts</uri>
@@ -7114,11 +7114,11 @@
       <static>1</static>
       <link name='link'>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://number1/meshes/number.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
           <material>
             <script>
               <uri>model://number3/materials/scripts</uri>
@@ -7199,11 +7199,11 @@
           </surface>
         </collision>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://cafe_table/meshes/cafe_table.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -7278,11 +7278,11 @@
           </surface>
         </collision>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://cafe_table/meshes/cafe_table.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -7357,11 +7357,11 @@
           </surface>
         </collision>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://cafe_table/meshes/cafe_table.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -7436,11 +7436,11 @@
           </surface>
         </collision>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://cafe_table/meshes/cafe_table.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -7463,18 +7463,18 @@
           </inertia>
         </inertial>
         <visual name='visual'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://first_2015_trash_can/meshes/trash_can.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
         </visual>
         <collision name='collision'>
-          <!-- <geometry>
+          <geometry>
             <mesh>
               <uri>model://first_2015_trash_can/meshes/trash_can.dae</uri>
             </mesh>
-          </geometry> -->
+          </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
