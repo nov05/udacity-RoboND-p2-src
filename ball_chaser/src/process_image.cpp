@@ -76,10 +76,10 @@ void process_image_callback(const sensor_msgs::Image img)
     int total_count = left_count + center_count + right_count;
     float speed = 0;
     float angle = 0;
-    
+
     if (total_count > 60000 || total_count < 100)
     {
-        linear_x = 0;
+        linear_x = 0.01;
         angular_z = 0.5;
     }
     else
