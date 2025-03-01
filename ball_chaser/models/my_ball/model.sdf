@@ -32,14 +32,16 @@
           <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
+          <!-- bright white -->
           <!-- <ambient>1 1 1 1</ambient> 
           <diffuse>1 1 1 1</diffuse>
           <specular>1 1 1 1</specular>
           <emissive>1 1 1 1</emissive> -->
-          <ambient>1 1 0 1</ambient>  <!-- Ambient light: bright yellow -->
-          <diffuse>1 1 0 1</diffuse>  <!-- Diffuse light: bright yellow -->
-          <specular>1 1 0 1</specular> <!-- No specular highlights -->
-          <emissive>1 1 0 1</emissive> <!-- Emissive light: black (no emission) -->
+          <!-- bright yellow -->
+          <ambient>1 1 0 1</ambient>  
+          <diffuse>1 1 0 1</diffuse> 
+          <specular>1 1 0 1</specular> 
+          <emissive>1 1 0 1</emissive> 
         </material>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <transparency>0</transparency>
