@@ -30,12 +30,15 @@ void process_image_callback(const sensor_msgs::Image img)
     // Then, identify if this pixel falls in the left, mid, or right side of the image
     // Depending on the white ball position, call the drive_bot function and pass velocities to it
     // Request a stop when there's no white ball seen by the camera
-    // int white_pixel = 255;
-    bool ball_detected = false;
 
+    float linear_x = 0;
+    float angular_z = 0;
     int left_count = 0;
     int center_count = 0;
     int right_count = 0;
+    int ball_detected_shreshold = 4000;
+    // Calculate the pixel's x-coordinate (column)
+    int column = (i / 3) % img.width;
 
     int count = 0;
     for (size_t i = 0; i < img.height * img.step; i += 3)
@@ -46,12 +49,49 @@ void process_image_callback(const sensor_msgs::Image img)
 
         // Next check if you found the white color ball
         if (red == 255 && green == 255 && blue == 0)
-            count += 1;
+        {
+            if (column < img.width / 3)
+            {
+                left_count += 1;
+            }
+            else if (column >= (img.width / 3) && column < (img.width - img.width / 3))
+            {
+                center_count += 1;
+            }
+            else
+            {
+                right_count += 1;
+            }
+        }
     }
-    ROS_INFO("yellow pixels detected: %d", count);
 
-    if (ball_detected == true)
-        drive_robot(0.5, 0);
+    if (left_count + center_count + right_count > 36000)
+    {
+        linear_x = 0;
+        angular = 0;
+        ROS_INFO("stop");
+    }
+    else if (left_count >= ball_detected_shreshold && left_count >= center_count && left_count >= right_count)
+    {
+
+        linear_x = 0.5;
+        angular = 0.1;
+        ROS_INFO("yellow pixels detected in left: %d", left_count);
+    }
+    else if (center_count >= ball_detected_shreshold && center_count > left_count && center_count >= right_count)
+    {
+        linear_x = 0.5;
+        angular = 0;
+        ROS_INFO("yellow pixels detected in center: %d", center_count);
+    }
+    else
+    {
+        linear_x = 0.5;
+        angular = -0.1;
+        ROS_INFO("yellow pixels detected in right: %d", right_count);
+    }
+
+    drive_robot(0.5, 0);
 }
 
 int main(int argc, char **argv)
