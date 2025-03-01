@@ -9,21 +9,29 @@ ros::ServiceClient client;
 void drive_robot(float lin_x, float ang_z)
 {
     // TODO: Request a service and pass the velocities to it to drive the robot
+    // Request to drive my robot forward
+    ball_chaser::DriveToTarget srv;
+    srv.request.linear_x = lin_x;
+    srv.request.angular_z = ang_z;
 }
 
 // This callback function continuously executes and reads the image data
 void process_image_callback(const sensor_msgs::Image img)
 {
 
-    int white_pixel = 255;
-
+    // https://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Image.html
     // TODO: Loop through each pixel in the image and check if there's a bright white one
     // Then, identify if this pixel falls in the left, mid, or right side of the image
     // Depending on the white ball position, call the drive_bot function and pass velocities to it
     // Request a stop when there's no white ball seen by the camera
+    // int white_pixel = 255;
+    bool ball_detected = false;
+
+    if (ball_detected == true)
+        drive_robot(0.5, 0);
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     // Initialize the process_image node and create a handle to it
     ros::init(argc, argv, "process_image");
