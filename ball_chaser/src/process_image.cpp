@@ -32,11 +32,11 @@ void process_image_callback(const sensor_msgs::Image img)
     int right_count = 0;
 
     int count = 0;
-    for (size_t i = 0; i < img->height * img->step; i += 3)
+    for (size_t i = 0; i < img.height * img.step; i += 3)
     {
-        int red = img->data[i];
-        int green = img->data[i + 1];
-        int blue = img->data[i + 2];
+        int red = img.data[i];
+        int green = img.data[i + 1];
+        int blue = img.data[i + 2];
 
         // Next check if you found the white color ball
         if (red == 1 && green == 1 && blue == 1)
