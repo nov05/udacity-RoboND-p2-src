@@ -38,7 +38,7 @@
           <emissive>1 1 1 1</emissive> -->
           <ambient>1 1 0 1</ambient>  <!-- Ambient light: bright yellow -->
           <diffuse>1 1 0 1</diffuse>  <!-- Diffuse light: bright yellow -->
-          <specular>1 1 1 1</specular> <!-- Specular light: white (default) -->
+          <specular>0 0 0 1</specular> <!-- No specular highlights -->
           <emissive>0 0 0 1</emissive> <!-- Emissive light: black (no emission) -->
         </material>
         <pose frame=''>0 0 0 0 -0 0</pose>
