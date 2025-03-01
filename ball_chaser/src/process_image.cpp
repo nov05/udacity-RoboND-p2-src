@@ -36,7 +36,7 @@ void process_image_callback(const sensor_msgs::Image img)
     int left_count = 0;
     int center_count = 0;
     int right_count = 0;
-    int ball_detected_shreshold = 4000;
+    int ball_detect_shreshold = 1000;
 
     for (size_t i = 0; i < img.height * img.step; i += 3)
     {
@@ -65,30 +65,31 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
+    int total_count = left_count + center_count + right_count;
     // If it is close to the ball, stop
-    if (left_count + center_count + right_count > 36000)
+    if ( total_count > 60000 || total_count < 100)
     {
         linear_x = 0;
         angular_z = 0;
     }
     // If the ball is in the left area, turn left and move forward
-    else if (left_count >= ball_detected_shreshold && left_count >= center_count && left_count >= right_count)
+    else if (left_count >= center_count && left_count >= right_count)
     {
 
-        linear_x = 0.5;
-        angular_z = 0.1;
+        linear_x = 0.1;
+        angular_z = 0.25;
     }
     // If the ball is in the center area, move forward
-    else if (center_count >= ball_detected_shreshold && center_count > left_count && center_count >= right_count)
+    else if (center_count > left_count && center_count >= right_count)
     {
-        linear_x = 0.5;
+        linear_x = 0.1;
         angular_z = 0;
     }
     // If the ball is in the right area, turn right and move forward
-    else if (right_count >= ball_detected_shreshold && right_count > center_count && right_count > left_count)
+    else if (right_count > center_count && right_count > left_count)
     {
-        linear_x = 0.5;
-        angular_z = -0.1;
+        linear_x = 0.1;
+        angular_z = -0.25;
     }
     // Or stop
     else
