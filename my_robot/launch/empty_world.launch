@@ -13,7 +13,7 @@
     </include>
 
     <!-- Launch other relevant files-->
-    <include file="$(find my_robot)/launch/robot_description.launch" />
+    <include file="$(find my_robot)/launch/my_robot.launch" />
 
     <!--launch rviz-->
     <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" /> -->
