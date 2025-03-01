@@ -27,6 +27,23 @@ void process_image_callback(const sensor_msgs::Image img)
     // int white_pixel = 255;
     bool ball_detected = false;
 
+    int left_count = 0;
+    int center_count = 0;
+    int right_count = 0;
+
+    int count = 0;
+    for (size_t i = 0; i < img->height * img->step; i += 3)
+    {
+        int red = img->data[i];
+        int green = img->data[i + 1];
+        int blue = img->data[i + 2];
+
+        // Next check if you found the white color ball
+        if (red == 1 && green == 1 && blue == 1)
+            count += 1;
+    }
+    ROS_INFO("yellow pixels detected: %d", count)
+
     if (ball_detected == true)
         drive_robot(0.5, 0);
 }
