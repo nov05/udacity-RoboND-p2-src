@@ -65,36 +65,36 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
+    // If it is close to the ball, stop
     if (left_count + center_count + right_count > 36000)
     {
         linear_x = 0;
         angular_z = 0;
-        ROS_INFO("stop");
     }
+    // If the ball is in the left area, turn left and move forward
     else if (left_count >= ball_detected_shreshold && left_count >= center_count && left_count >= right_count)
     {
 
         linear_x = 0.5;
         angular_z = 0.1;
-        ROS_INFO("yellow pixels detected in left: %d", left_count);
     }
+    // If the ball is in the center area, move forward
     else if (center_count >= ball_detected_shreshold && center_count > left_count && center_count >= right_count)
     {
         linear_x = 0.5;
         angular_z = 0;
-        ROS_INFO("yellow pixels detected in center: %d", center_count);
     }
+    // If the ball is in the right area, turn right and move forward
     else if (right_count >= ball_detected_shreshold && right_count > center_count && right_count > left_count)
     {
         linear_x = 0.5;
         angular_z = -0.1;
-        ROS_INFO("yellow pixels detected in right: %d", right_count);
     }
+    // Or stop
     else
     {
         linear_x = 0;
         angular_z = 0;
-        ROS_INFO("stop");
     }
 
     drive_robot(linear_x, angular_z);
