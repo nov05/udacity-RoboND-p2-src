@@ -70,13 +70,13 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
-    const float speed = 0.5;
+    const float speed = 0.4;
     const float angle = 0.5;
     float linear_x = 0;
     float angular_z = angle;
     int total_count = left_count + center_count + right_count;
 
-    if (total_count > 45000 || total_count < 100)
+    if (total_count > 40000 || total_count < 100)
     {
         linear_x = 0;
     }
