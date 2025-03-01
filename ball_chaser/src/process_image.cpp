@@ -4,21 +4,29 @@
 
 // Define a global client that can request services
 ros::ServiceClient client;
+float last_linear_x = 0;
+float last_angular_z = 0;
 
 // This function calls the command_robot service to drive the robot in the specified direction
-void drive_robot(float lin_x, float ang_z)
+void drive_robot(float linear_x, float angular_z)
 {
     std::string node_name = ros::this_node::getName();
 
     // TODO: Request a service and pass the velocities to it to drive the robot
     // Request to drive my robot forward
     ball_chaser::DriveToTarget srv;
-    srv.request.linear_x = lin_x;
-    srv.request.angular_z = ang_z;
+    srv.request.linear_x = linear_x;
+    srv.request.angular_z = angular_z;
 
-    // Make the service call
-    if (!client.call(srv))
-        ROS_ERROR("%s: Failed to call service drive_to_target", node_name.c_str());
+    if (linear_x != last_linear_x || angular_z != last_angular_z)
+    {
+        // Make the service call
+        if (!client.call(srv))
+            ROS_ERROR("%s: Failed to call service drive_to_target", node_name.c_str());
+    }
+    
+    last_linear_x = linear_x;
+    last_angular_z = angular_z;
 }
 
 // This callback function continuously executes and reads the image data
@@ -67,7 +75,7 @@ void process_image_callback(const sensor_msgs::Image img)
 
     int total_count = left_count + center_count + right_count;
     // If it is close to the ball, stop
-    if ( total_count > 60000 || total_count < 100)
+    if (total_count > 60000 || total_count < 100)
     {
         linear_x = 0;
         angular_z = 0;
