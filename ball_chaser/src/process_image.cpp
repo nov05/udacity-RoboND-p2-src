@@ -80,13 +80,13 @@ void process_image_callback(const sensor_msgs::Image img)
     if (total_count > 60000 || total_count < 100)
     {
         linear_x = 0;
-        angular_z = 0;
+        angular_z = 0.5;
     }
     else
     {
         float ratio = (total_count - 100) / 59900;
         speed = 1 * (1 - ratio);
-        angle = 0.4 * ratio + 0.1;
+        angle = 0.1 * ratio + 0.4;
     }
 
     // If the ball is in the left area, turn left and move forward
