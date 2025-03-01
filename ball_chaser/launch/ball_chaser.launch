@@ -1,5 +1,20 @@
 <launch>
+
+    <!-- My Ball Pose -->
+    <arg name="my_ball_x" default="0" />
+    <arg name="my_ball_y" default="0" />
+    <arg name="my_ball_z" default="0" />
+    <arg name="my_ball_roll" default="0" />
+    <arg name="my_ball_pitch" default="0" />
+    <arg name="my_ball_yaw" default="0" />
+    <!-- Spawn My Ball -->
+    <node name="spawn_my_ball" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-sdf -file $(find ball_chaser)/models/my_ball/model.sdf -model my_ball
+            -x $(arg my_ball_x) -y $(arg my_ball_y) -z $(arg my_ball_z)
+            -R $(arg my_ball_roll) -P $(arg my_ball_pitch) -Y $(arg my_ball_yaw)" />
+
     <!-- The drive_bot node -->
     <node name="drive_bot" type="drive_bot" pkg="ball_chaser" output="screen">
     </node>
+
 </launch>

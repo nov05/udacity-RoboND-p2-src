@@ -14,6 +14,7 @@
 
     <!-- Launch other relevant files-->
     <include file="$(find my_robot)/launch/my_robot.launch" />
+    <include file="$(find ball_chaser)/launch/ball_chaser.launch" />
 
     <!--launch rviz-->
     <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" /> -->

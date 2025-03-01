@@ -2,22 +2,20 @@
 <launch>
 
     <!-- Robot Pose -->
-    <arg name="x" default="0" />
-    <arg name="y" default="0" />
-    <arg name="z" default="0" />
-    <arg name="roll" default="0" />
-    <arg name="pitch" default="0" />
-    <arg name="yaw" default="0" />
-
+    <arg name="my_robot_x" default="0" />
+    <arg name="my_robot_y" default="0" />
+    <arg name="my_robot_z" default="0" />
+    <arg name="my_robot_roll" default="0" />
+    <arg name="my_robot_pitch" default="0" />
+    <arg name="my_robot_yaw" default="0" />
     <!-- send urdf to param server -->
     <param name="robot_description"
         command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'" />
-
     <!-- Spawn My Robot -->
-    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    <node name="spawn_my_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
         args="-urdf -param robot_description -model my_robot 
-            -x $(arg x) -y $(arg y) -z $(arg z)
-            -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
+            -x $(arg my_robot_x) -y $(arg my_robot_y) -z $(arg my_robot_z)
+            -R $(arg my_robot_roll) -P $(arg my_robot_pitch) -Y $(arg my_robot_yaw)" />
 
     <!-- Send fake joint values-->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
