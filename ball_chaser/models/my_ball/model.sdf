@@ -32,7 +32,7 @@
           <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
-          <!-- <ambient>1 1 1 1</ambient>
+          <!-- <ambient>1 1 1 1</ambient> 
           <diffuse>1 1 1 1</diffuse>
           <specular>1 1 1 1</specular>
           <emissive>1 1 1 1</emissive> -->
