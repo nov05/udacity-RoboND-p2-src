@@ -73,24 +73,17 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
+    float speed = 0.3;
+    float angle = 0.4;
     int total_count = left_count + center_count + right_count;
-    float speed = 0;
-    float angle = 0;
 
     if (total_count > 60000 || total_count < 100)
     {
-        linear_x = 0.1;
-        angle = 0.4
+        linear_x = 0;
+        angle = 0
     }
-    else
-    {
-        float ratio = (total_count - 100) / 59900;
-        speed = 0.3 * (1 - ratio) + 0.1;
-        angle = 0.1 * ratio + 0.4;
-    }
-
     // If the ball is in the left area, turn left and move forward
-    if (left_count >= center_count && left_count >= right_count)
+    else if (left_count >= center_count && left_count >= right_count)
     {
 
         linear_x = speed;
