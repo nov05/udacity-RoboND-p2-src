@@ -80,25 +80,25 @@ void process_image_callback(const sensor_msgs::Image img)
     if (total_count > 50000 || total_count < 100)
     {
         linear_x = 0;
-        angle = 0.5;
     }
-    // If the ball is in the left area, turn left and move forward
-    else if (left_count >= center_count && left_count >= right_count)
+    else
     {
-
         linear_x = speed;
+    }
+    
+    // If the ball is in the left area, turn left and move forward
+    if (left_count >= center_count && left_count >= right_count)
+    {
         angular_z = angle;
     }
     // If the ball is in the center area, move forward
     else if (center_count > left_count && center_count >= right_count)
     {
-        linear_x = speed;
         angular_z = 0;
     }
     // If the ball is in the right area, turn right and move forward
     else if (right_count > center_count && right_count > left_count)
     {
-        linear_x = speed;
         angular_z = -angle;
     }
 
