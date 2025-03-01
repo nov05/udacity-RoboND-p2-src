@@ -84,11 +84,17 @@ void process_image_callback(const sensor_msgs::Image img)
         angular_z = 0;
         ROS_INFO("yellow pixels detected in center: %d", center_count);
     }
-    else
+    else if (right_count >= ball_detected_shreshold && right_count > center_count && right_count > left_count)
     {
         linear_x = 0.5;
         angular_z = -0.1;
         ROS_INFO("yellow pixels detected in right: %d", right_count);
+    }
+    else
+    {
+        linear_x = 0;
+        angular_z = 0;
+        ROS_INFO("stop");
     }
 
     drive_robot(linear_x, angular_z);
