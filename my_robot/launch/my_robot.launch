@@ -12,7 +12,7 @@
     <param name="robot_description"
         command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'" />
     <!-- Spawn My Robot -->
-    <node name="spawn_my_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    <node name="spawn_my_robot" pkg="gazebo_ros" type="spawn_model" respawn="true" output="screen"
         args="-urdf -param robot_description -model my_robot 
             -x $(arg my_robot_x) -y $(arg my_robot_y) -z $(arg my_robot_z)
             -R $(arg my_robot_roll) -P $(arg my_robot_pitch) -Y $(arg my_robot_yaw)" />
