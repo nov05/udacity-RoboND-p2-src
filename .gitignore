@@ -1,7 +1,8 @@
 ## Added by nov05, base on github C++ .gitignore
 build/
-## This will be managed by another GitHub repo
+## These packages will be managed by other GitHub repos
 simple_arm/   
+turtlebot_simulator/
 
 # Prerequisites
 *.d
