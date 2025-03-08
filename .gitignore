@@ -2,7 +2,6 @@
 build/
 ## These packages will be managed by other GitHub repos
 simple_arm/   
-turtlebot_simulator/
 
 # Prerequisites
 *.d
