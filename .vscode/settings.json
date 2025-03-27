@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "D:/github/udacity-RoboND-p2-src/ball_chaser"
+    "cmake.configureOnOpen": false,
+    "cmake.generator": "",
+    "cmake.sourceDirectory": "",
+    "cmake.buildDirectory": "",
 }
