@@ -30,4 +30,12 @@
         <arg name="my_ball_yaw" default="0" />
     </include>
 
+    <!-- Launch rqt_image_view to display the image -->
+    <node name="rqt_image_view" pkg="rqt_image_view" type="rqt_image_view"
+        respawn="false" output="screen"
+        args="/camera/rgb/image_raw" />
+
+    <!-- launch rviz -->
+    <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" /> -->
+
 </launch>
