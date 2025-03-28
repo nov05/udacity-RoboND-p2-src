@@ -14,7 +14,8 @@
             -R $(arg my_ball_roll) -P $(arg my_ball_pitch) -Y $(arg my_ball_yaw)" />
 
     <!-- The drive_bot node -->
-    <node name="drive_bot" type="drive_bot" pkg="ball_chaser" output="screen">
-    </node>
+    <node name="drive_bot" type="drive_bot" pkg="ball_chaser" respawn="false" output="screen" />
+    <node name="process_image" type="process_image" pkg="ball_chaser" respawn="false"
+        output="screen" />
 
 </launch>
